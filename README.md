@@ -134,3 +134,15 @@ Solution :
 
 Solution : 
 <img src="./assets/Pic-6.png" />
+
+**Scenario 5 :** Nested Dynamic Routes
+<img src="./assets/Pic-7.png" />
+
+- Inside the `[productId]` folder, create another folder named `reviews`.
+
+- Inside `reviews` folder create another dynamic folder named as `[reviewId]`.
+
+- Inside `[reviewId]` dynamic folder, create a `page.tsx` file.
+
+Solution : 
+<img src="./assets/Pic-8.png" />
