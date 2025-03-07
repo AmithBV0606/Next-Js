@@ -74,3 +74,35 @@
 - While Client components can't perform server-side tasks like reading files, they can use hooks and handle user interactions.
 
 - Client components are the traditional React components you're already familiar with from previous versions of React.
+
+## Routing 
+
+- Next.js has a file-system based routing system.
+
+- URLs you can access in your browser are determined by how you organize your files and folders in your code.
+
+### Routing conventions : 
+
+1. All routes must live inside the app folder.
+2. Route files must ne named either page.js or page.tsx
+3. Each folder represents a segment of the URL path.
+
+**NOTE :** When these conventions are followed, the file automatically becomes available as a route.
+
+### File based routing : 
+
+**Scenario 1 :**
+<img src="./assets/Pic-1.png" />
+
+- `page.tsx` file inside the app folder automatically maps to your site's URL.
+
+- If you deleted `layout.tsx` file, the next.js will automatically re-create that file when you first access the root route.
+
+**Scenario 2 :**
+<img src="./assets/Pic-2.png" />
+
+- Create 2 folders named `about` and `profile`.
+
+- Inside those files create a file named `page.tsx` and export a default function(component).
+
+- The routes are directly tied to their folder names within the app directory.
