@@ -101,8 +101,24 @@
 **Scenario 2 :**
 <img src="./assets/Pic-2.png" />
 
-- Create 2 folders named `about` and `profile`.
+- Create 2 folders named `about` and `profile` inside app directory.
 
 - Inside those files create a file named `page.tsx` and export a default function(component).
 
 - The routes are directly tied to their folder names within the app directory.
+
+**Scenario 3 :** Nested Routes
+<img src="./assets/Pic-3.png" />
+
+- Inside app directory create another folder named `blog`.
+
+- Create a `page.tsx` file.
+
+- Then create 2 new folders named `first` and `second` inside the `blog` folder.
+
+- Create `page.tsx` inside both `first` and `second` folder.
+
+Solution : 
+<img src="./assets/Pic-4.png" />
+
+**NOTE :** Next.js mirrors your folder structure in your URL's automatically.
