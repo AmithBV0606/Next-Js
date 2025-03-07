@@ -122,3 +122,15 @@ Solution :
 <img src="./assets/Pic-4.png" />
 
 **NOTE :** Next.js mirrors your folder structure in your URL's automatically.
+
+**Scenario 4 :** Dynamic Routes
+<img src="./assets/Pic-5.png" />
+
+- Create a folder named `products` and a `page.tsx` file inside it.
+
+- Create anther folder named `productId` wrapped within the square brackets, inside the `products` folder.
+
+- Inside the `[productId]` folder, create a `page.tsx`, where you'll receive whatever is passed in the URL after the `http://localhost:3000/products`
+
+Solution : 
+<img src="./assets/Pic-6.png" />
