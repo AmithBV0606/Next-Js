@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next-Js by Codevolution
 
-## Getting Started
+### What is Next.js ?
 
-First, run the development server:
+- Next.js is a React framework for building full-stack web applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### React 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- React alone isn't feasible to create a fully-featured application ready for production.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- React is a library for building user interfaces.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- You need to make decisions about other features such as routing, data fetcing and more.
 
-## Learn More
+### Next.js
 
-To learn more about Next.js, take a look at the following resources:
+- It uses React for building user interfaces.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Provides additional features that enable you to build production-ready applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- These features includes routing, optimized rendering, data fetching, bundling, compiling and more.
 
-## Deploy on Vercel
+- You don't need to install additional packages as Next.js provides everything you need.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Why learn Next.js ?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js simplifies the process of building production-ready web applications.
+
+1. Routing (File based)
+2. API routes
+3. Rendering (SSR and CSR)
+4. Data fetching (asynchronous components)
+5. Styling (Built in support for TailwindCss)
+6. Optimization (Image, Link tags, fonts)
+7. Dev and prod build system
+
+### `package.json` file breakdown : 
+
+- `dev`: "next dev" : For running the project in development mode. 
+- `build`: "next build" : For production builds.
+- `start`: "next start" : For running the production server.
+- `lint`: "next lint" : For setting up the next.js's built-in eslint configuration.
+
+### Other files : 
+
+- `next.config.ts` : For next.js configuration.
+- `tsconfig.json` : For TypeScript configuration.
+- `eslint.config.mjs` : For eslint configuration.
+- `postcss.config.mjs` : For tailwindcss configuration
