@@ -89,7 +89,7 @@
 
 **NOTE :** When these conventions are followed, the file automatically becomes available as a route.
 
-### File based routing : 
+## File based routing : 
 
 **Scenario 1 :**
 <img src="./assets/Pic-1.png" />
@@ -160,3 +160,17 @@ Solution :
 
 Solution : 
 <img src="./assets/Pic-10.png" />
+
+### Page Not Found : 
+
+- Create a file named `not-found.tsx` inside the app directory.
+
+- Now you can create your own custom "404 Page not found".
+
+- This page can be triggered programatically as well.
+
+**NOTE :** 
+
+1. The file name must be exactly `not-found.tsx`.
+
+2. "NotFound" component will not accept any props.
