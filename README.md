@@ -184,3 +184,24 @@ Solution :
 - You can safely colocate project files inside route segments in the app directory without worrying about them accidentally becoming routes themselves.
 
 **NOTE :** The component without the default exports, will also won't work.
+
+### Private folders : 
+
+- Helps us to keep the project super organized.
+
+- A way to tell Next.js,
+"Hey, this folder is just for internal stuff - don't include it in the routing system."
+
+- The folder and all its subfolders are excluded from routing.
+
+- Add an underscore at the start of the folder name
+
+**Benifits of Private Folder :**
+
+- Keeping your UI logic separate from routing logic.
+
+- Having a consistent way to organize internal files in your project.
+
+- Making it easier to group related files in your code editor.
+
+- Avoiding potential naming conflicts with future Next.js file naming conventions.
