@@ -146,3 +146,17 @@ Solution :
 
 Solution : 
 <img src="./assets/Pic-8.png" />
+
+**Scenario 6 :** Catch-all Routes
+<img src="./assets/Pic-9.png" />
+
+- Create a folder named `docs` inside the app dirtectory.
+
+- Inside `docs` folder, create a "catch-all" route, by creating the folder like the following : `[...slug]`
+
+- The 3 dots represents the catch-all routes.
+
+- Inside `[..slug]` folder, create a `page.tsx` file.
+
+Solution : 
+<img src="./assets/Pic-10.png" />
