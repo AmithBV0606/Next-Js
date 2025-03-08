@@ -31,7 +31,7 @@ export default function RootLayout({
           <p className="text-center text-black text-2xl font-bold">Header</p>
         </header>
         {children}
-        <footer className="bg-yellow-600 p-4 absolute bottom-0 w-full">
+        <footer className="bg-yellow-600 p-4 w-full">
           <p className="text-center text-black text-2xl font-bold">Footer</p>
         </footer>
       </body>
