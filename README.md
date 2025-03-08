@@ -205,3 +205,20 @@ Solution :
 - Making it easier to group related files in your code editor.
 
 - Avoiding potential naming conflicts with future Next.js file naming conventions.
+
+### Route Groups : 
+
+- Let's us logically organize our routes and project files without impacting the URL structure.
+
+- Let's implement authentication routes : 
+
+    - Register
+    - Login
+    - Forgot password
+
+**Solution :**
+
+- Create a folder named `(auth)`.
+- Move the `register`, `login` and `forgot-password` folders inside the `(auth)` folder.
+
+**NOTE :** The auth folder must be wrapped within the parenthesis.
