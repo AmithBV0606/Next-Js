@@ -222,3 +222,30 @@ Solution :
 - Move the `register`, `login` and `forgot-password` folders inside the `(auth)` folder.
 
 **NOTE :** The auth folder must be wrapped within the parenthesis.
+
+### Layouts : 
+
+- Pages are route-specific UI components.
+
+- A layout is UI that is shared between multiple pages in your app.
+
+<img src="./assets/Pic-11.png" /> 
+
+**Creating a layout** : 
+
+1. Default export a React component from layout.js or layout.tsx file.
+2. That component takes a children prop, which Next.js will populate with your page content.
+
+**Working of Layouts :**
+
+1. 
+<img src="./assets/Pic-12.png" />
+
+2. 
+<img src="./assets/Pic-13.png" />
+
+1. 
+<img src="./assets/Pic-14.png" />
+
+1. 
+<img src="./assets/Pic-15.png" />
