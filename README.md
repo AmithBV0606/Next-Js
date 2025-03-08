@@ -174,3 +174,13 @@ Solution :
 1. The file name must be exactly `not-found.tsx`.
 
 2. "NotFound" component will not accept any props.
+
+### File Colocation :
+
+- Create a folder named `dashboard` inside the app directory, and create a `line-chart.tsx` file.
+
+- The route `http://loacalhost:3000/dashboard` won't work. You must only create `page.tsx` file for this route to work.
+
+- You can safely colocate project files inside route segments in the app directory without worrying about them accidentally becoming routes themselves.
+
+**NOTE :** The component without the default exports, will also won't work.
