@@ -221,7 +221,7 @@ Solution :
 - Create a folder named `(auth)`.
 - Move the `register`, `login` and `forgot-password` folders inside the `(auth)` folder.
 
-**NOTE :** The auth folder must be wrapped within the parenthesis.
+**NOTE :** The auth folder must be wrapped within the parenthesis. Now the `/auth` in the url will be ignored.
 
 ### Layouts : 
 
@@ -255,3 +255,27 @@ Solution :
 <img src="./assets/Pic-16.png" />
 
 <img src="./assets/Pic-17.png" />
+
+### Multiple Root Layouts : 
+
+**Route group uses :**
+
+- Organize our project structure without affecting URL's.
+
+- Apply layouts selectively to specific parts of our app.
+
+**Implementation :** Remove the header for the `/register`, `/login` and `/forgot-password` routes.
+
+1. create a route group called `(marketing)`, inside which create 2 folders named `customers` and `revenue`.
+
+2. create `page.tsx` file inside both `customers` and `revenue` folder.
+
+3. Now move the `layout.tsx` file from the app/root directory into the `(marketing)` route groups folder and rename the default export function component to "MarketingLayout".
+
+4. Create another `layout.tsx` inside the `(auth)` route group folder and rename the default export function component to "AuthLayout".
+
+5. Now remove the header from the `layout.tsx` file which is present inside the `(auth)` route group folder.
+
+6. Now if you open the `http://localhost:3000`, you will see an error saying "page.tsx doesn't have a root layout".
+
+7. To solve this problem, move the `page.tsx` from the app/root directory into the `(marketing)` route group.
