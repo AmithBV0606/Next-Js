@@ -1,4 +1,25 @@
-# Next-Js by Codevolution
+# Next-Js by Codevolution : Part-1
+
+### Topics Covered : 
+
+- Introduction to Next.js
+- Hello World
+- Project Structure
+- Before We Start
+- Routing
+- Nested Routes
+- Dynamic Routes
+- Nested Dynamic Routes
+- Catch-all Segments
+- Not Found Page
+- File Colocation
+- Private Folders
+- Route Groups
+- Layouts
+- Nested Layouts
+- Multiple Root Layouts
+- Routing Metadata
+- title Metadata
 
 ### What is Next.js ?
 
