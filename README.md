@@ -279,3 +279,105 @@ Solution :
 6. Now if you open the `http://localhost:3000`, you will see an error saying "page.tsx doesn't have a root layout".
 
 7. To solve this problem, move the `page.tsx` from the app/root directory into the `(marketing)` route group.
+
+### Routing Metadata : 
+
+- The Metadata API in Next.js is a powerful feature that lets us define metadata for each page.
+
+- Metadata ensures our content looks great when it's shared or indexed by search engines.
+
+- Two ways to handle metadata in layout.tsx or page.tsx files:
+
+    1. Export a `static metadata` object.
+    2. Export a dynamic `generateMetadata` function.
+
+**NOTE :** 
+
+1. You cannot use both `static metadata` object and dynamic `generateMetadata` function in the same route segment.
+
+2. Both static and dynamic metadata won't work on the pages marked as "use client".
+
+**Solution to NOTE 2 :**
+
+- Problem : 
+```js
+// counter/page.tsx : 
+
+"use client";
+
+import { useState } from "react";
+
+export const metadata = {
+    title: "Counter"
+}
+
+export default function page() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>{count}</p>
+      <button
+        onClick={() => setCount((prev) => prev + 1)}
+        className="bg-blue-700 p-2 rounded-lg cursor-pointer"
+      >
+        Increment
+      </button>
+    </div>
+  );
+}
+
+// The above code will throw error because, metadata object cannot be exported out of a client component.
+```
+
+- Solution : Move the client side logic into a seperate component.
+
+```js
+// counter/counter.tsx :
+
+"use client";
+
+import { useState } from "react";
+
+export function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>{count}</p>
+      <button
+        onClick={() => setCount((prev) => prev + 1)}
+        className="bg-blue-700 p-2 rounded-lg cursor-pointer"
+      >
+        Increment
+      </button>
+    </div>
+  );
+}
+```
+
+```js
+// counter/page.tsx : 
+
+import { Counter } from "./counter";
+
+export const metadata = {
+  title: "Counter",
+};
+
+export default function page() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+```
+
+**Metadata rules :**
+
+- Both `layout.tsx` and `page.tsx` can export metadata. Layout metadata applies to all its pages, while page metadata is specific to that page.
+
+- Metadata follows a top-down order, starting from the root level.
+
+- When metadata exists in multiple places along a route, they merge together, with page metadata overriding layout metadata for matching properties.
